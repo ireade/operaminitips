@@ -61,12 +61,13 @@ body {
   line-height: 1.4;
   color: #323232; }
 
+.site-title {
+  font-weight: 700;
+  font-size: 1.8rem; }
+
 h1 {
   font-size: 3rem;
   margin-bottom: 20px; }
-
-strong, .subheading {
-  font-size: 1.8rem; }
 
 .subheading {
   margin-bottom: 15px; }
@@ -107,7 +108,7 @@ html, body {
   margin: 0 auto;
   width: 100%;
   max-width: 780px;
-  padding: 0 20px; }
+  padding: 0 15px; }
 
 .site-section {
   background-color: #fff;
@@ -120,7 +121,7 @@ html, body {
 
 .site-header {
   margin-bottom: 70px;
-  background-color: antiquewhite;
+  background-color: #eee9e9;
   text-align: left;
   padding: 20px 0; }
 
@@ -128,27 +129,29 @@ html, body {
   min-height: 600px; }
 
 .site-footer {
-  background-color: antiquewhite;
+  background-color: #eee9e9;
   padding: 20px 0;
   text-align: center;
   margin-top: 20px; }
 
 .branding, .sh-info {
-  display: inline-block; }
+  display: block;
+  text-align: center; }
 
-.branding {
-  height: 50px; }
-  .branding img {
-    height: 100%;
-    width: auto; }
+.branding img {
+  width: 55px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px; }
 
 .sh-info {
-  float: right;
-  padding-top: 5px;
-  text-align: right; }
+  padding-top: 5px; }
   .sh-info p {
     display: block;
     margin-bottom: 3px; }
+
+.twitter-share-button {
+  margin-right: 10px; }
 
 .btn {
   display: inline-block;
@@ -156,8 +159,8 @@ html, body {
   margin: 0 5px 10px;
   padding: 5px;
   background-color: #fff;
-  border: 1px solid antiquewhite;
-  border-bottom: 5px solid antiquewhite;
+  border: 1px solid #eee9e9;
+  border-bottom: 5px solid #eee9e9;
   position: relative; }
   .btn .text {
     position: relative;
@@ -171,7 +174,7 @@ html, body {
   bottom: 0;
   left: 0;
   transition: height 0.5s;
-  background-color: antiquewhite;
+  background-color: #eee9e9;
   z-index: 1; }
 
 .btn.active .overlay, .btn:hover .overlay {

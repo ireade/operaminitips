@@ -1,29 +1,47 @@
 app.factory('CheckSpecialFeature', function() {
+
+var emojis = [
+	'twa-confused',
+	'twa-tired-face',
+	'twa-frowning',
+	'twa-expressionless',
+	'twa-unamused',
+	'twa-weary',
+	'twa-confounded',
+	'twa-cry',
+	'twa-sob',
+	'twa-astonished'
+];
+
+
+var specialFeatures = [
+	'fontface',
+	'css-fixed',
+	'transforms2d',
+	'border-radius',
+	'css-transitions',
+	'text-decoration',
+	'link-icon-png',
+	'form-validation',
+	'css-animation',
+	'calc',
+	'transforms2d',
+	'viewport-units',
+	'html5semantic',
+	'audio',
+	'video',
+	'filereader',
+	'shadowdom'
+]
+
+
 return function(featureKey) {
-
-	switch(featureKey) {
-
-		case 'fontface':
-			return 'twa-confused';
+	for (i = 0; i < specialFeatures.length; i++) {
+		if (featureKey == specialFeatures[i]) {
+			var randomNumber = Math.floor( Math.random() * emojis.length );
+			return emojis[randomNumber];
 			break;
-
-		case 'css-fixed':
-			return 'twa-confused';
-			break;
-
-		case 'transforms2d':
-			return 'twa-confused';
-			break;
-		
-
-		
-			
-		default:
-			return false;
-
-
-
+		}
 	}
-
 }
 })
