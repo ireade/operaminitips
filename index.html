@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>WTF Opera Mini</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600|Source+Sans+Pro:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="WTFOperaMini">
+
+	<header class="site-header">
+		<div class="container cf">
+			<div class="branding">
+				<a ng-href="#/">
+					<img src="images/wtfoperamini.png" alt="WTF Opera Mini?">
+				</a>
+			</div>
+
+			<div class="sh-info">
+				<p>Based on <a href="https://github.com/Fyrd/caniuse" target="_blank">caniuse</a> data</p>
+			</div>	
+		</div>
+	</header>
+
+	<main class="site-main container">
+		<div ng-view></div>
+
+
+
+
+	</main>
+
+	
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/CheckSpecialFeature.js"></script>
+
+
+</body>
+</html>

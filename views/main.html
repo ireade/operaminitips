@@ -1,0 +1,42 @@
+<section>
+	<h1>Features Not Fully Supported</h1>
+
+	
+	<div class="filter-features">
+		<div ng-class="{ active: filterObj['$'] == ''}"  ng-click="chooseCategory('')">
+			All
+		</div>
+		<div ng-class="{ active: filterObj['$'] == 'css'}"  ng-click="chooseCategory('css')">
+			CSS
+		</div>
+		<div ng-class="{ active: filterObj['$'] == 'html'}"  ng-click="chooseCategory('html')">
+			HTML
+		</div>
+		<div ng-class="{ active: filterObj['$'] == 'canvas'}"  ng-click="chooseCategory('canvas')">
+			Canvas
+		</div>
+		<div ng-class="{ active: filterObj['$'] == 'js api'}"  ng-click="chooseCategory('js api')">
+			JS API
+		</div>
+		<div ng-class="{ active: filterObj['$'] == 'png'}"  ng-click="chooseCategory('png')">
+			PNG
+		</div>
+		<div ng-class="{ active: filterObj['$'] == 'dom'}"  ng-click="chooseCategory('dom')">
+			DOM
+		</div>
+		<div ng-class="{ active: filterObj['$'] == 'other'}"  ng-click="chooseCategory('other')">
+			Other
+		</div>
+	</div>
+
+
+	<ul class="feature-list">
+		<li ng-repeat="feature in features | filter: filterObj " class="feature {{ feature.opera_stat_class }}">
+			<a ng-href="#/{{feature.key}}">
+	  			{{feature.title}}
+
+	  			<span ng-if="feature.special">{{feature.special}}</span>
+			</a>
+  		</li>
+	</ul>
+</section>

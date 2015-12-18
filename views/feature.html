@@ -1,0 +1,38 @@
+<header class="page-header site-section">
+
+	<h1>{{ feature.title }}</h1>
+	<p class="subheading">{{ feature.description }}</p>
+
+	<a href="http://caniuse.com/#feat={{ featureKey }}" target="_blank">View on caniuse.com</a>
+	
+</header>
+
+<div class="site-section feature-status {{ classStat }}">
+	{{ niceStat }}<br>
+
+	<ul class="bullet-list" ng-if="notes != ''">
+		<li ng-repeat="note in notes">
+			{{note}}
+		</li>
+	</ul>
+</div>
+
+<section class="workarounds">
+<h2>Workarounds</h2>
+
+<div class="site-section" ng-repeat="workaround in workarounds">
+	{{ workaround.author }}<br>
+	{{ workaround.github_gist_url }}
+
+	<script src="https://gist.github.com/ireade/c005d8a1f4f693ecc213.js"></script>
+</div>
+
+</script>
+
+
+
+</div>
+
+
+
+

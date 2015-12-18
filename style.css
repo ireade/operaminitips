@@ -1,0 +1,147 @@
+/* Eric Meyer's Reset CSS v2.0 
+   http://meyerweb.com/eric/tools/css/reset
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Box sizing reset 
+   Thanks to Paul Irish
+   http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.not-supported {
+  border-left: 5px solid #ab2918; }
+
+.partial-support {
+  border-left: 5px solid #EDA745; }
+
+html {
+  font-size: 62.5%;
+  background-color: #fafafa; }
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #323232; }
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px; }
+
+.subheading {
+  font-size: 1.8rem; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+p {
+  margin: 0 auto 15px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.code-font {
+  font-family: 'Source Code Pro'; }
+
+html, body {
+  background-color: whitesmoke; }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 780px;
+  padding: 0 20px; }
+
+.site-section {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  margin-bottom: 3rem; }
+
+.site-section:not(.no-padd) {
+  padding: 10px 20px; }
+
+.site-header {
+  margin-bottom: 70px;
+  background-color: antiquewhite;
+  text-align: left;
+  padding: 20px 0; }
+
+.branding, .sh-info {
+  display: inline-block; }
+
+.branding {
+  height: 50px; }
+  .branding img {
+    height: 100%;
+    width: auto; }
+
+.sh-info {
+  float: right;
+  padding-top: 10px; }
+
+.feature-list {
+  text-align: center; }
+
+li.feature {
+  list-style-type: none;
+  padding: 5px;
+  width: auto;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 10px 20px; }
+
+.filter-features {
+  margin: 30px 80px;
+  display: block; }
+  .filter-features div {
+    display: inline-block;
+    border: 1px solid red;
+    cursor: pointer;
+    margin: 0 5px 10px;
+    padding: 5px;
+    border: 2px solid #c8c8c8;
+    border-radius: 5px; }
+  .filter-features div:hover, .filter-features div.active {
+    background-color: #87d37c; }
+
+ul.bullet-list {
+  margin: 15px 0;
+  list-style: disc;
+  list-style-position: inside; }
