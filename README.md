@@ -1,4 +1,4 @@
-# WTF Opera Mini
+# WTF Opera Mini?!
 
 Features not supported by Opera Mini and some workarounds for them.
 
