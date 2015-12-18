@@ -14,7 +14,7 @@ app.filter('niceStat', function() {
 			return "Supported"
 			break
 		case checkShorthand('n'):
-			return "Not supported"
+			return "No Support"
 			break
 		case checkShorthand('a'):
 			return "Partial Support"

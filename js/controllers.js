@@ -1,9 +1,6 @@
 app.controller('FeatureController', function($scope, $http, $filter, $routeParams, dataURL) {
 
 
-	console.log("hello");
-
-
 	/* DEFINE VARIABLES  */
 	var featureKey = $routeParams.featureKey;
 	$scope.featureKey = featureKey;
@@ -52,21 +49,26 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 
 	$.getJSON(workaroundURL, function(response) {
 		angular.forEach(response, function(value, key) {
-			$scope.workarounds.push(value);
+
+			//console.log(value);
+
+			$http.get(value.github_gist_url).then(function(response) {
+
+				var workaround = {
+					github_username: value.github_username,
+					data: response.data
+				}
+
+				$scope.workarounds.push(workaround);
+
+			}, function(error) {
+				console.log("error: "+error);
+			})
+
+
+			
 		})
-	});
-
-
-
-	// var script = document.createElement('script');
-	// script.type = 'text/javascript';
-	// script.src = 'https://gist.github.com/ireade/c005d8a1f4f693ecc213.js';
-  	//document.body.appendChild('hello');
-
-//var test =  $.getScript("https://gist.github.com/ireade/c005d8a1f4f693ecc213.js");
-// console.log(test);
-
-	
+	});	
 
 });
 
@@ -86,7 +88,7 @@ app.controller('MainController', function($scope, $http, $filter, CheckSpecialFe
 
 	/* FILTER FEATURES */
 	$scope.filterObj = {
-		$: ''
+		$: 'css'
 	}
 	$scope.chooseCategory = function(category) {
 		$scope.filterObj = {
@@ -134,7 +136,6 @@ app.controller('MainController', function($scope, $http, $filter, CheckSpecialFe
 	}, function(error) {
 		console.log("error: "+error);
 	})
-
 
 
 

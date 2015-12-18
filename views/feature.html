@@ -1,31 +1,39 @@
-<header class="page-header site-section">
+<header class="page-header site-section {{ classStat }}">
 
 	<h1>{{ feature.title }}</h1>
+
 	<p class="subheading">{{ feature.description }}</p>
-
-	<a href="http://caniuse.com/#feat={{ featureKey }}" target="_blank">View on caniuse.com</a>
-	
-</header>
-
-<div class="site-section feature-status {{ classStat }}">
-	{{ niceStat }}<br>
+	<p class="subheading"><strong>{{ niceStat }}</strong></p>
 
 	<ul class="bullet-list" ng-if="notes != ''">
 		<li ng-repeat="note in notes">
 			{{note}}
 		</li>
 	</ul>
-</div>
+
+	<a class="" href="http://caniuse.com/#feat={{ featureKey }}" target="_blank">View on caniuse.com</a>
+	
+</header>
+
 
 <section class="workarounds">
-<h2>Workarounds</h2>
+<h2>Workarounds (<a href="">Submit</a>)</h2>
 
-<div class="site-section" ng-repeat="workaround in workarounds">
-	{{ workaround.author }}<br>
-	{{ workaround.github_gist_url }}
 
-	<script src="https://gist.github.com/ireade/c005d8a1f4f693ecc213.js"></script>
+<p ng-if="workarounds.length == 0">None yet.</p>
+
+<div ng-if="workarounds.length > 0" class="workaround" ng-repeat="workaround in workarounds">
+	<header class="workaround-header">
+		Submitted by <a href="https://github.com/{{ workaround.github_username }}" target="_blank">{{ workaround.github_username }}</a>
+	</header>
+
+
+	<pre class="workaround-code-snippet">
+	{{ workaround.data }}
+	</pre>
 </div>
+
+
 
 </script>
 

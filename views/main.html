@@ -1,41 +1,59 @@
 <section>
-	<h1>Features Not Fully Supported</h1>
+	<!-- <h1>Features Not Fully Supported</h1> -->
 
 	
 	<div class="filter-features">
-		<div ng-class="{ active: filterObj['$'] == ''}"  ng-click="chooseCategory('')">
-			All
+		<div class="btn" ng-class="{ active: filterObj['$'] == ''}"  ng-click="chooseCategory('')">
+			<span class="overlay"></span>
+			<span class="text">All</span>
 		</div>
-		<div ng-class="{ active: filterObj['$'] == 'css'}"  ng-click="chooseCategory('css')">
-			CSS
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'css'}"  ng-click="chooseCategory('css')">
+			<span class="overlay"></span>
+			<span class="text">CSS</span>
 		</div>
-		<div ng-class="{ active: filterObj['$'] == 'html'}"  ng-click="chooseCategory('html')">
-			HTML
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'html'}"  ng-click="chooseCategory('html')">
+			<span class="overlay"></span>
+			<span class="text">HTML</span>
 		</div>
-		<div ng-class="{ active: filterObj['$'] == 'canvas'}"  ng-click="chooseCategory('canvas')">
-			Canvas
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'canvas'}"  ng-click="chooseCategory('canvas')">
+			<span class="overlay"></span>
+			<span class="text">Canvas</span>
 		</div>
-		<div ng-class="{ active: filterObj['$'] == 'js api'}"  ng-click="chooseCategory('js api')">
-			JS API
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'js api'}"  ng-click="chooseCategory('js api')">
+			<span class="overlay"></span>
+			<span class="text">JS API</span>
 		</div>
-		<div ng-class="{ active: filterObj['$'] == 'png'}"  ng-click="chooseCategory('png')">
-			PNG
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'png'}"  ng-click="chooseCategory('png')">
+			<span class="overlay"></span>
+			<span class="text">PNG</span>
 		</div>
-		<div ng-class="{ active: filterObj['$'] == 'dom'}"  ng-click="chooseCategory('dom')">
-			DOM
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'dom'}"  ng-click="chooseCategory('dom')">
+			<span class="overlay"></span>
+			<span class="text">DOM</span>
 		</div>
-		<div ng-class="{ active: filterObj['$'] == 'other'}"  ng-click="chooseCategory('other')">
-			Other
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'other'}"  ng-click="chooseCategory('other')">
+			<span class="overlay"></span>
+			<span class="text">Other</span>
 		</div>
+
+		<div class="btn" ng-class="{ active: filterObj['$'] == 'twa-'}"  ng-click="chooseCategory('twa-')">
+			<span class="overlay"></span>
+			<span class="text"><i class="twa twa-confused"></i></span>
+		</div>
+
+		
 	</div>
 
 
 	<ul class="feature-list">
-		<li ng-repeat="feature in features | filter: filterObj " class="feature {{ feature.opera_stat_class }}">
+		<li ng-repeat="feature in features | filter: filterObj " class="feature code-font no-ul {{ feature.opera_stat_class }}">
+			<span class="overlay"></span>
 			<a ng-href="#/{{feature.key}}">
 	  			{{feature.title}}
 
-	  			<span ng-if="feature.special">{{feature.special}}</span>
+	  			<span ng-if="feature.special">
+	  				<i class="twa {{feature.special}}"></i>
+	  			</span>
 			</a>
   		</li>
 	</ul>
