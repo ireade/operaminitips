@@ -1,7 +1,7 @@
 # WTF Opera Mini?!
 
 
-![Stat Counter Browser Statistics for Nigeria]('images/StatCounter-browser-NG-monthly-201412-201511.png')
+![Stat Counter Browser Statistics for Nigeria](images/StatCounter-browser-NG-monthly-201412-201511.png)
 
 According to [StatCounter](http://gs.statcounter.com/#all-browser-NG-monthly-201412-201511), **61.57% of users in Nigeria** use Opera Mini as their browser on mobile. This is a stark difference to the **global percentage of 5.41%**.
 
@@ -10,7 +10,13 @@ This came as a surprise to me.
 
 Features not supported by Opera Mini and some workarounds for them.
 
-Read the Blog Post
+
+
+
+Although this is directed at Opera Mini, this can be a useful resource for anyone practicaing progressive enhancement or graceful degradation.
+
+
+**[Visit the Website](http://wtfoperamini.com)**
 
 
 ## Contribute
@@ -32,9 +38,11 @@ Contribute to workarounds
 Workaround files are in `workarounds/` folder.
 If the file for your workaround does not yet exist, create one. The title of the file should be the same as the path on the website. 
 
-So, for example, for the [CSS position:fixed](http://wtfoperamini.com/#/css-fixed) feature, the url on the website is `http://wtfoperamini.com/#/css-fixed`, and the corresponding file name is `css-fixed.json`.
+For example, for the [CSS position:fixed](http://wtfoperamini.com/#/css-fixed) feature, the url on the website is `http://wtfoperamini.com/#/css-fixed`, and the corresponding file name is `css-fixed.json`.
 
 **Step 5. Add your workaround details**
+
+Format - 
 
 ```
 "[index]": {
@@ -43,7 +51,7 @@ So, for example, for the [CSS position:fixed](http://wtfoperamini.com/#/css-fixe
 }
 ```
 
-For example -
+For example, in `workarounds/css-fixed.json` -
 
 ```
 "1": {
@@ -52,10 +60,13 @@ For example -
 }
 ```
 
+**Step 6. Add your name to the contributors list.**
 
-**Step 6. Submit a pull request for your addition.**
+In the `contributors.md` file, add your name (and link if you wish) to the bottom of the list.
 
 
-### Contributors
 
-- [Ire Aderinokun](http://github.com/ireade)
+**Step 7. Submit a pull request for your addition.**
+
+
+
