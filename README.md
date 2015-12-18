@@ -1,5 +1,13 @@
 # WTF Opera Mini?!
 
+
+![Stat Counter Browser Statistics for Nigeria]('images/StatCounter-browser-NG-monthly-201412-201511.png')
+
+According to [StatCounter](http://gs.statcounter.com/#all-browser-NG-monthly-201412-201511), **61.57% of users in Nigeria** use Opera Mini as their browser on mobile. This is a stark difference to the **global percentage of 5.41%**.
+
+
+This came as a surprise to me. 
+
 Features not supported by Opera Mini and some workarounds for them.
 
 Read the Blog Post
@@ -7,24 +15,26 @@ Read the Blog Post
 
 ## Contribute
 
+Contribute to workarounds
+
 
 ### How to Contribute
 
 
-1. Create a [public github gist](https://gist.github.com/) with your workaround code
+**Step 1. Create a [public github gist](https://gist.github.com/) with your workaround code**
 
-2. Get the raw link to the gist file
+**Step 2. Get the raw link to the gist file**
 
-3. Fork this repository
+**Step 3. Fork this repository**
 
-4. Find the file for the feature your workaround is for
+**Step 4. Find the file for the feature your workaround is for**
 
 Workaround files are in `workarounds/` folder.
 If the file for your workaround does not yet exist, create one. The title of the file should be the same as the path on the website. 
 
-So, for example, for the `CSS position:fixed` feature, the url on the website is `http://wtfoperamini.com/#/css-fixed`, and the file name is `css-fixed.json`.
+So, for example, for the [CSS position:fixed](http://wtfoperamini.com/#/css-fixed) feature, the url on the website is `http://wtfoperamini.com/#/css-fixed`, and the corresponding file name is `css-fixed.json`.
 
-5. Add your workaround details
+**Step 5. Add your workaround details**
 
 ```
 "[index]": {
@@ -43,7 +53,7 @@ For example -
 ```
 
 
-6. Submit a pull request for your addition.
+**Step 6. Submit a pull request for your addition.**
 
 
 ### Contributors
