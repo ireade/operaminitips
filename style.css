@@ -211,7 +211,7 @@ li.feature:hover .overlay {
   transition: width 1s; }
 
 .filter-features {
-  margin: 30px 80px;
+  margin: 30px 0;
   display: block;
   text-align: center; }
 

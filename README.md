@@ -62,7 +62,7 @@ For example, in `workarounds/css-fixed.json` -
 
 **Step 6. Add your name to the contributors list.**
 
-In the `contributors.md` file, add your name (and link if you wish) to the bottom of the list.
+In the `README.md` file, add your name (and link if you wish) to the bottom of the list.
 
 
 
@@ -70,3 +70,6 @@ In the `contributors.md` file, add your name (and link if you wish) to the botto
 
 
 
+### Contirbutors
+
+- [Ire Aderinokun](http://github.com/ireade)
