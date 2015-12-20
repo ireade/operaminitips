@@ -17,31 +17,21 @@
 
 
 <section class="workarounds">
-<h2>Workarounds (<a href="https://github.com/ireade/wtfoperamini#contribute" target="_blank">Submit</a>)</h2>
+
+	<h2>Workarounds (<a href="https://github.com/ireade/wtfoperamini#contribute" target="_blank">Submit</a>)</h2>
 
 
-<p ng-if="workarounds.length == 0">None yet.</p>
+	<p ng-if="workarounds.length == 0">None yet.</p>
 
-<div ng-if="workarounds.length > 0" class="workaround" ng-repeat="workaround in workarounds">
-	<header class="workaround-header">
-		Submitted by <a href="https://github.com/{{ workaround.github_username }}" target="_blank">{{ workaround.github_username }}</a> 
+	<div ng-if="workarounds.length > 0" class="workaround" ng-repeat="workaround in workarounds">
 
-		<a class="github-gist-star" target="_blank" href="{{ workaround.github_gist_url }}">
-			<i class="fa fa-github-alt"></i> Discuss on GithubGist
-		</a>
-	</header>
+		<p data-height="268" data-theme-id="21401" data-slug-hash="{{ workaround.pen_id }}" data-default-tab="result" data-user="{{ workaround.codepen_username }}" class='codepen'>
+		<a href='http://codepen.io/{{ workaround.codepen_username }}/pen/{{ workaround.pen_id }}/'>See the Pen</a> by <a href='http://codepen.io/{{ workaround.codepen_username }}'>@{{ workaround.codepen_username }}</a> on <a href='http://codepen.io'>CodePen</a>
+		</p>
 
-	<pre class="workaround-code-snippet">{{ workaround.data }}</pre>
-</div>
+	</div>
+
+</section>
 
 
-
-</script>
-
-
-
-</div>
-
-
-
-
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>

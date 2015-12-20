@@ -20,14 +20,13 @@ Although this is directed at Opera Mini, this can be a useful resource for anyon
 Help contribute to the workarounds!
 
 
-**Step 1. Create a public [Github Gist](https://gist.github.com/) with your workaround**
+**Step 1. Create a public [Code Pen](http://codepen.io/pen/) with your workaround**
 
-Your workaround can be anything. It can be a snippet of code, or a plain text file explaining how you would work around the problem. It will be helpful for you to add a commented out intro to your workaround if it is for a particular situation. 
-
-[See example](https://gist.github.com/ireade/0320cb5edf0118fba1ba)
+[See example](http://codepen.io/ireade/pen/rxeXBR)
 
 
 **Step 2. Fork this repository**
+
 
 **Step 3. Find the file for the feature your workaround is for**
 
@@ -39,21 +38,20 @@ For example, for the [CSS3 2D Transforms](http://wtfoperamini.com/#/transforms2d
 
 **Step 4. Add your workaround details**
 
-You will need three details
+You will need two details -
 
-- Your github username
-- The URL to the gist
-- The link to the raw gist file
+- Your codepen username
+- The id for your pen
 
+You can get these details from the url to your pen. The url structure for a pen is `http://codepen.io/[codepen_username]/pen/[pen_id]`
 
-For example, in `workarounds/transforms2d.json` -
+For example, for the pen at `http://codepen.io/ireade/pen/rxeXBR`, the details added to the file in `workarounds/transforms2d.json` were -
 
 ```
 {
 	"1": {
-		"github_username": "ireade",
-		"github_gist_url": "https://gist.github.com/ireade/0320cb5edf0118fba1ba",
-		"raw_github_gist_file": "https://gist.githubusercontent.com/ireade/0320cb5edf0118fba1ba/raw/8b5e1ea5de5ae39b382f9bda03f1eb6df89dca7d/2d-transform-workaround-1.css"
+		"codepen_username": "ireade",
+		"pen_id": "rxeXBR"
 	}
 }
 ```

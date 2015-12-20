@@ -144,24 +144,11 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 		$.getJSON(workaroundURL, function(response) {
 			angular.forEach(response, function(value, key) {
 
-				//console.log(value);
-
-				// GET WORKAROUND DATA FROM GITHUM GIST URL 
-				$http.get(value.raw_github_gist_file).then(function(response) {
-
-					var workaround = {
-						github_username: value.github_username,
-						github_gist_url: value.github_gist_url,
-						data: response.data
-					}
-
-					$scope.workarounds.push(workaround);
-
-				}, function(error) {
-					console.log(error);
-				}) // end get workarounddata
-
-
+				var workaround = {
+					codepen_username: value.codepen_username,
+					pen_id: value.pen_id
+				}
+				$scope.workarounds.push(workaround);
 				
 			}) // end foreach workaround
 		});	// end get workaround json file

@@ -94,7 +94,7 @@ a {
 .no-ul a, .btn a, a.btn {
   text-decoration: none; }
 
-.code-font, .workaround-code-snippet {
+.code-font {
   font-family: 'Source Code Pro';
   font-size: 1.4rem; }
 
@@ -251,24 +251,3 @@ section.workarounds {
   background-color: #fff;
   margin-bottom: 40px;
   width: 100%; }
-
-.workaround-header {
-  padding: 10px 15px;
-  background-color: #eee9e9;
-  position: relative; }
-
-.workaround-code-snippet {
-  background-color: #323232;
-  color: #fff;
-  padding: 15px; }
-
-.github-gist-star {
-  display: inline-block;
-  background-color: #f0f0f0;
-  border: 1px solid #d5d5d5;
-  border-radius: 2px;
-  padding: 3px;
-  float: right; }
-
-.github-gist-star:hover {
-  background-color: #d5d5d5; }
