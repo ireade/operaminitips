@@ -31,7 +31,8 @@ var specialFeatures = [
 	'audio',
 	'video',
 	'filereader',
-	'shadowdom'
+	'shadowdom',
+	'css-initial-value'
 ]
 
 

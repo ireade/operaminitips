@@ -24,13 +24,14 @@
 
 <div ng-if="workarounds.length > 0" class="workaround" ng-repeat="workaround in workarounds">
 	<header class="workaround-header">
-		Submitted by <a href="https://github.com/{{ workaround.github_username }}" target="_blank">{{ workaround.github_username }}</a>
+		Submitted by <a href="https://github.com/{{ workaround.github_username }}" target="_blank">{{ workaround.github_username }}</a> 
+
+		<a class="github-gist-star" target="_blank" href="{{ workaround.github_gist_url }}">
+			<i class="fa fa-github-alt"></i> Discuss on GithubGist
+		</a>
 	</header>
 
-
-	<pre class="workaround-code-snippet">
-		{{ workaround.data }}
-	</pre>
+	<pre class="workaround-code-snippet">{{ workaround.data }}</pre>
 </div>
 
 

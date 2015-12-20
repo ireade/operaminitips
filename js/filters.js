@@ -1,6 +1,4 @@
 app.filter('niceStat', function() {
-
-
   return function(shorthand) {
 
   	function checkShorthand(s) {
@@ -19,20 +17,16 @@ app.filter('niceStat', function() {
 		case checkShorthand('a'):
 			return "Partial Support"
 			break
-		
 		default:
 			return shorthand
 	}
 
     	
   }
-
 });
 
 
 app.filter('classStat', function() {
-
-
   return function(shorthand) {
 
   	function checkShorthand(s) {
@@ -40,7 +34,6 @@ app.filter('classStat', function() {
 			return true;
 		}
 	}
-
 
   	switch (true) {
 		case checkShorthand('y'):
@@ -52,12 +45,10 @@ app.filter('classStat', function() {
 		case checkShorthand('a'):
 			return "partial-support"
 			break
-		
 		default:
 			return shorthand
 	}
 
     	
   }
-
 });
