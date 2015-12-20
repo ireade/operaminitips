@@ -24,14 +24,14 @@ Help contribute to the workarounds!
 
 Your workaround can be anything. It can be a snippet of code, or a plain text file explaining how you would work around the problem. It will be helpful for you to add a commented out intro to your workaround if it is for a particular situation. 
 
-[See example]()
+[See example](https://gist.github.com/ireade/0320cb5edf0118fba1ba)
 
 
 **Step 2. Fork this repository**
 
 **Step 3. Find the file for the feature your workaround is for**
 
-Workaround files are in `workarounds/` folder.
+Workaround files are in `workarounds/` directory.
 If the file for your workaround does not yet exist, create one. The title of the file should be the same as the path on the website. 
 
 For example, for the [CSS3 2D Transforms](http://wtfoperamini.com/#/transforms2d) feature, the url on the website is `http://wtfoperamini.com/#/transforms2d`, and the corresponding file name is `transforms2d.json`.
@@ -55,16 +55,16 @@ For example, in `workarounds/transforms2d.json` -
 		"github_gist_url": "https://gist.github.com/ireade/0320cb5edf0118fba1ba",
 		"raw_github_gist_file": "https://gist.githubusercontent.com/ireade/0320cb5edf0118fba1ba/raw/8b5e1ea5de5ae39b382f9bda03f1eb6df89dca7d/2d-transform-workaround-1.css"
 	}
-	}
+}
 ```
 
-**Step 5. Add your name to the contributors list.**
+**Step 5. Add your name to the contributors list**
 
 In the `README.md` file, add your name (and link if you wish) to the bottom of the list.
 
 
 
-**Step 6. Submit a pull request for your addition.**
+**Step 6. Submit a pull request for your addition**
 
 
 

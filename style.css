@@ -219,6 +219,25 @@ li.feature:hover .overlay {
   display: block;
   text-align: center; }
 
+.search-field {
+  height: 40px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #eee9e9;
+  border-bottom: 5px solid #eee9e9;
+  margin: 0 auto 40px;
+  display: inherit;
+  font-size: 1.6rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #323232;
+  padding: 0 5px;
+  outline: none; }
+
+.search-field:focus {
+  background-color: #eee9e9; }
+
 ul.bullet-list {
   margin-bottom: 15px;
   list-style: disc;

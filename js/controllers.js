@@ -14,14 +14,28 @@ app.controller('MainController', function($scope, $http, $filter, CheckSpecialFe
 
 
 	/* FILTER FEATURES */
+
+	// DEFAULTS
 	$scope.filterObj = {
 		$: 'css'
 	}
+	$scope.showSearch = '0';
+
+
+	// FUNCTIONS
 	$scope.chooseCategory = function(category) {
 		$scope.filterObj = {
 			$: category
 		}
+		$scope.showSearch = '0';
 	}
+	$scope.showSearchField = function() {
+		$scope.filterObj = {
+			$: ''
+		}
+		$scope.showSearch = '1';
+	}
+
 
 
 
