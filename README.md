@@ -66,6 +66,6 @@ In the `README.md` file, add your name (and link if you wish) to the bottom of t
 
 
 
-### Contirbutors
+### Contributors
 
 - [Ire Aderinokun](http://github.com/ireade)
