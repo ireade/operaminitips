@@ -32,7 +32,9 @@ var specialFeatures = [
 	'video',
 	'filereader',
 	'shadowdom',
-	'css-initial-value'
+	'css-initial-value',
+	'use-strict',
+	'script-async'
 ]
 
 
