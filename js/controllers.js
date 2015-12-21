@@ -160,6 +160,8 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 					pen_id: value.pen_id
 				}
 				$scope.workarounds.push(workaround);
+
+				$scope.$apply()
 				
 			}) // end foreach workaround
 		});	// end get workaround json file
