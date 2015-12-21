@@ -56,7 +56,7 @@ For example, for the pen at `http://codepen.io/ireade/pen/rxeXBR`, the details a
 }
 ```
 
-**Step 5. Add your name to the contributors list**
+**Step 5. Add your name to the contributors list** (optional)
 
 In the `README.md` file, add your name (and link if you wish) to the bottom of the list.
 

@@ -196,7 +196,7 @@ html, body {
   background-color: whitesmoke;
   z-index: 3; }
   .loading-container img {
-    width: 150px;
+    width: 100px;
     height: auto; }
 
 .loading-container:not(.hidden) {

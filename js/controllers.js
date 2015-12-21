@@ -143,17 +143,11 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 
 	function getWorkarounds() {
 
-		console.log("called getWorkarounds");
-
 		setTimeout(function() { $('.loading-container').addClass('hidden'); },  1000);
 
 		$.getJSON(workaroundURL, function(response) {
 
-			console.log("called getJSON");
-
 			angular.forEach(response, function(value, key) {
-
-				console.log(value);
 
 				var workaround = {
 					codepen_username: value.codepen_username,
@@ -161,7 +155,7 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 				}
 				$scope.workarounds.push(workaround);
 
-				$scope.$apply()
+				$scope.$apply();
 				
 			}) // end foreach workaround
 		});	// end get workaround json file
