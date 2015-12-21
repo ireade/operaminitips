@@ -141,8 +141,15 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 
 	function getWorkarounds() {
 
+		console.log("called getWorkarounds");
+
 		$.getJSON(workaroundURL, function(response) {
+
+			console.log("called getJSON");
+
 			angular.forEach(response, function(value, key) {
+
+				console.log(value);
 
 				var workaround = {
 					codepen_username: value.codepen_username,
