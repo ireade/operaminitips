@@ -42,6 +42,8 @@ app.controller('MainController', function($scope, $http, $filter, CheckSpecialFe
 	/* REQUEST */
     $http.get(dataURL).then(function(response) {
 
+    	setTimeout(function() { $('.loading-container').addClass('hidden'); },  1000);
+
 		var features = response.data.data;
 		//console.log(response.data);
 
@@ -141,11 +143,13 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 
 	function getWorkarounds() {
 
-		console.log("called getWorkarounds");
+		//console.log("called getWorkarounds");
+
+		setTimeout(function() { $('.loading-container').addClass('hidden'); },  1000);
 
 		$.getJSON(workaroundURL, function(response) {
 
-			console.log("called getJSON");
+			//console.log("called getJSON");
 
 			angular.forEach(response, function(value, key) {
 
