@@ -5,11 +5,13 @@
 
 *********************** */
 
-app.controller('MainController', function($scope, $http, $filter, CheckSpecialFeature, dataURL) {
+app.controller('MainController', function($scope, $http, $filter, CheckSpecialFeature, dataURL, $window, $location) {
 
 
 	/* DEFINE VARIABLES  */
 	$scope.features = [];
+
+	$window.ga('send', 'pageview', { page: $location.url() });
 
 
 
@@ -87,7 +89,7 @@ app.controller('MainController', function($scope, $http, $filter, CheckSpecialFe
 
 *********************** */
 
-app.controller('FeatureController', function($scope, $http, $filter, $routeParams, dataURL) {
+app.controller('FeatureController', function($scope, $http, $filter, $routeParams, dataURL, $window, $location) {
 
 
 	/* DEFINE VARIABLES  */
@@ -95,6 +97,8 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 	$scope.featureKey = featureKey;
 	$scope.feature;
 	$scope.notes = [];
+
+	$window.ga('send', 'pageview', { page: $location.url() });
 
 
 	$('html, body').animate({
