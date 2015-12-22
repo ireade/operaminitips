@@ -5,13 +5,11 @@
 
 *********************** */
 
-app.controller('MainController', function($scope, $http, $filter, CheckSpecialFeature, dataURL, $window, $location) {
+app.controller('MainController', function($scope, $http, $filter, CheckSpecialFeature, dataURL) {
 
 
 	/* DEFINE VARIABLES  */
 	$scope.features = [];
-
-	$window.ga('send', 'pageview', { page: $location.url() });
 
 
 
