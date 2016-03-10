@@ -97,6 +97,12 @@ body {
   font-size: 1.8rem;
 }
 
+.previously-text {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -119,6 +125,14 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 .btn {
@@ -190,7 +204,7 @@ body {
   background-color: #eee9e9;
   padding: 20px 0;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .branding,
@@ -208,11 +222,19 @@ body {
 
 .sh-info {
   padding-top: 5px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .sh-info p {
   display: block;
   margin-bottom: 3px;
+}
+
+.social-buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .twitter-share-button {

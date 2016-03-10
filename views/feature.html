@@ -1,9 +1,9 @@
 <div class="loading-container">
-	<img src="images/wtf.gif" alt="">
+	<img src="images/loading.gif" alt="">
 </div>
 
 
-<header class="page-header site-section {{ classStat }}">
+<!-- <header class="page-header site-section {{ classStat }}">
 
 	<h1>{{ feature.title }}</h1>
 
@@ -15,10 +15,15 @@
 			{{note}}
 		</li>
 	</ul>
-
-	<a class="" href="http://caniuse.com/#feat={{ featureKey }}" target="_blank">View on caniuse.com</a>
 	
-</header>
+</header> -->
+
+<section class="workarounds">
+	<h2>Support</h2>
+
+	<p class="ciu_embed" data-feature="{{ featureKey }}" data-periods="current">   <a href="http://caniuse.com/#feat={{ featureKey }}">Can I Use {{ featureKey }}?</a> Data on support for the css-first-letter feature across the major browsers from caniuse.com. </p>
+
+</section>
 
 
 <section class="workarounds">
@@ -38,5 +43,5 @@
 
 </section>
 
-
+<script async src="//cdn.jsdelivr.net/caniuse-embed/1.0.0/caniuse-embed.min.js"></script>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
