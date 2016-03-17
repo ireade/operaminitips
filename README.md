@@ -1,4 +1,4 @@
-# WTF Opera Mini?!
+# Opera Mini Tips (previously WTF Opera Mini?!)
 
 
 ![Stat Counter Browser Statistics for Nigeria](images/Nigeria.png)
@@ -7,12 +7,12 @@ According to [StatCounter](http://gs.statcounter.com/#mobile_browser-NG-monthly-
 
 This is a huge problem because Opera Mini today is basically like IE 8. It has terrible support for a lot of development features we take for granted.
 
-[WTF Opera Mini?!](http://wtfoperamini.com) is a list of all the unsupported or partially supported development features, and some crowsourced workarounds for them. 
+[Opera Mini Tips](ttp://operamini.tips) is a list of all the unsupported or partially supported development features, and some crowsourced workarounds for them. 
 
 Although this is directed at Opera Mini, this can be a useful resource for anyone practicing progressive enhancement or graceful degradation.
 
 
-**[Visit the Website](http://wtfoperamini.com)**
+**[Visit the Website](http://operamini.tips)**
 
 
 ## Contribute

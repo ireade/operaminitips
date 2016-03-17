@@ -14,6 +14,10 @@ app.config(function($routeProvider) {
 			controller: 'MainController',
 			templateUrl: 'views/about.html'
 		})
+		.when('/tips', {
+			controller: 'MainController',
+			templateUrl: 'views/tips.html'
+		})
 		.when('/:featureKey', {
 			controller: 'FeatureController',
 			templateUrl: 'views/feature.html'
