@@ -45,12 +45,12 @@ app.controller('MainController', function($scope, $http, $filter, CheckSpecialFe
     	setTimeout(function() { $('.loading-container').addClass('hidden'); },  1000);
 
 		var features = response.data.data;
-		//console.log(response.data);
 
 		// LOOP THROUGH ALL FEATURES
 		angular.forEach(features, function(value, key) {
 
-			var opera_stat_raw = value.stats['op_mini']['5.0-8.0']
+
+			var opera_stat_raw = value.stats['op_mini']['all'];
 			var opera_stat_clean = $filter('classStat')(opera_stat_raw);
 
 			// ONLY PUSH FEATURES THAT ARE NOT SUPPORTED OR PARTIALLY SUPPORTED BY OPERA MINI
@@ -111,7 +111,7 @@ app.controller('FeatureController', function($scope, $http, $filter, $routeParam
 
 		$scope.feature = features[featureKey];
 
-		var opera_stat_raw = $scope.feature.stats['op_mini']['5.0-8.0']
+		var opera_stat_raw = $scope.feature.stats['op_mini']['all']
 		$scope.niceStat = $filter('niceStat')(opera_stat_raw);
 		$scope.classStat = $filter('classStat')(opera_stat_raw);
 
