@@ -7,7 +7,7 @@ According to [StatCounter](http://gs.statcounter.com/#mobile_browser-NG-monthly-
 
 This is a huge problem because Opera Mini today is basically like IE 8. It has terrible support for a lot of development features we take for granted.
 
-[Opera Mini Tips](ttp://operamini.tips) is a list of all the unsupported or partially supported development features, and some crowsourced workarounds for them. 
+[Opera Mini Tips](ttp://operamini.tips) is a list of all the unsupported or partially supported development features, and some crowsourced workarounds for them.
 
 Although this is directed at Opera Mini, this can be a useful resource for anyone practicing progressive enhancement or graceful degradation.
 
@@ -31,7 +31,7 @@ Help contribute to the workarounds!
 **Step 3. Find the file for the feature your workaround is for**
 
 Workaround files are in `workarounds/` directory.
-If the file for your workaround does not yet exist, create one. The title of the file should be the same as the path on the website. 
+If the file for your workaround does not yet exist, create one. The title of the file should be the same as the path on the website.
 
 For example, for the [CSS3 2D Transforms](http://wtfoperamini.com/#/transforms2d) feature, the url on the website is `http://wtfoperamini.com/#/transforms2d`, and the corresponding file name is `transforms2d.json`.
 
@@ -68,4 +68,4 @@ In the `README.md` file, add your name (and link if you wish) to the bottom of t
 
 ### Contributors
 
-- 
+- [Stephen Amaza](https://github.com/steveamaza)
