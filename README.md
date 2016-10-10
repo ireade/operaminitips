@@ -33,7 +33,7 @@ Help contribute to the workarounds!
 Workaround files are in `workarounds/` directory.
 If the file for your workaround does not yet exist, create one. The title of the file should be the same as the path on the website.
 
-For example, for the [CSS3 2D Transforms](https://operamini.tips/#/transforms2d) feature, the url on the website is `http://wtfoperamini.com/#/transforms2d`, and the corresponding file name is `transforms2d.json`.
+For example, for the [CSS3 2D Transforms](https://operamini.tips/#/transforms2d) feature, the url on the website is `https://operamini.tips/#/transforms2d`, and the corresponding file name is `transforms2d.json`.
 
 
 **Step 4. Add your workaround details**
