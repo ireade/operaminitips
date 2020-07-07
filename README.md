@@ -69,3 +69,4 @@ In the `README.md` file, add your name (and link if you wish) to the bottom of t
 ### Contributors
 
 - [Stephen Amaza](https://github.com/steveamaza)
+- [Ifeora Okechukwu](https://github.com/isocroft)
